@@ -6,7 +6,9 @@ $TTL    604800
                         2419200         ; Expire
                          604800 )       ; Negative Cache TTL
 ;
-@       IN      NS      ns1         
-@       IN      NS      ns2         
-ns1     IN      A       192.168.10.10
-ns2     IN      A       192.168.10.11
+@       IN      NS      nsroot
+omb     IN      NS      ns1.omb
+omb     IN      NS      ns2.omb
+nsroot  IN      A       192.168.10.254
+ns1.omb IN      A       192.168.10.10
+ns2.omb IN      A       192.168.10.11

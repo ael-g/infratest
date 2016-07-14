@@ -6,7 +6,7 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
-zone "omb.one" {
+zone "one" {
   type master;
-  file "/etc/bind/db.omb.one";
+  file "/etc/bind/db.one";
 };
