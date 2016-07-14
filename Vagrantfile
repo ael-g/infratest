@@ -39,24 +39,24 @@ Vagrant.configure("2") do |config|
   ########## LOADBALANCERS ##########
   config.vm.define "lb1a" do |lb1a|
     lb1a.vm.box = "debian/jessie64"
-    lb1a.vm.network "private_network", ip: "192.168.10.11"
+    lb1a.vm.network "private_network", ip: "192.168.10.20"
   end
 
   config.vm.define "lb1b" do |lb1b|
     lb1b.vm.box = "debian/jessie64"
-    lb1b.vm.network "private_network", ip: "192.168.10.11"
+    lb1b.vm.network "private_network", ip: "192.168.10.21"
   end
 
 
   ########## BACKENDS ##########
   config.vm.define "back1a" do |back1a|
     back1a.vm.box = "debian/jessie64"
-    back1a.vm.network "private_network", ip: "192.168.10.11"
+    back1a.vm.network "private_network", ip: "192.168.10.30"
   end
 
   config.vm.define "back1b" do |back1b|
     back1b.vm.box = "debian/jessie64"
-    back1b.vm.network "private_network", ip: "192.168.10.11"
+    back1b.vm.network "private_network", ip: "192.168.10.31"
   end
 
 
